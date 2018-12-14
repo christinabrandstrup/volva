@@ -1,0 +1,1229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #4f4437;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p,
+li {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #4f4437;
+}
+
+
+
+
+img {
+    width: 100%;
+}
+
+.baggrund {
+    background-color: rgba(145, 128, 107, 0.2);
+}
+
+
+
+.inside {
+    list-style-position: inside;
+}
+
+/************************ NAVIGATION **************************/
+
+header {
+    display: flex;
+    background: white;
+    width: 100%;
+    padding: 0 20px;
+    padding: 0 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin-left: .5em;
+}
+
+.logo1 {
+    display: flex;
+    width: 80px;
+    position: relative;
+    margin: 4% 0% 8% 0%;
+}
+
+#logo a,
+#main-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: .5em;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    align-items: center;
+}
+
+#main-nav a {
+    display: flex;
+    margin: 0 25px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+#main-nav a:hover {
+    color: darkgray;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.active {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+
+
+
+/*######################## FORSIDE  ##########################*/
+
+
+
+
+#home {
+
+    background: url("../images/volva-kropsterapi-massage-briks.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+hr {
+    height: 1px;
+    background: #ffffff;
+    border: 0;
+    margin: 0 auto 40px auto;
+}
+
+#home h1 {
+    font-size: 50px;
+    height: 70vh;
+    text-align: center;
+    margin-top: 20%;
+}
+
+
+
+#home .button {
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    width: 30%;
+}
+
+
+.button {
+    border-radius: 4px;
+    background-color: rgb(145, 128, 107);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 2%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span::after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/******** KNAP2 ***********/
+
+#home .button1 {
+    position: absolute;
+    right: 10%;
+    top: 65%;
+    width: 30%;
+}
+
+
+.button1 {
+    border-radius: 4px;
+    background-color: rgb(145, 128, 107);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 2%;
+    width: 30%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button1:hover span {
+    padding-right: 25px;
+}
+
+.button1:hover span::after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/********** OM JANNE JEPPESEN ************/
+
+#om-janne {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#om-janne > img {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    margin-top: 25%;
+}
+
+#om-janne > div > h1 {
+    padding-top: 15%;
+    padding-left: 12%;
+}
+
+#om-janne > div > p {
+    padding: 12%;
+    line-height: 30px;
+}
+
+
+/********** PRISER *********/
+
+#priser {
+    background-color: rgba(145, 128, 107, 0.2);
+    width: 100%;
+    padding-bottom: 9%;
+}
+
+#priser > h1 {
+    text-align: center;
+    padding: 8% 0%;
+    font-weight: bold;
+}
+
+.priser-billeder {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 15%;
+    align-items: center;
+}
+
+
+.priser-billeder img {
+    width: 25%;
+    padding: 2%;
+}
+
+
+
+/************ HVAD ER KROPSTERAPI **************/
+
+#kropsterapi h1,
+#kropsterapi p {
+    text-align: center;
+    padding: 2%;
+}
+
+#kropsterapi {
+    padding: 5%;
+}
+
+
+
+/************ ANBEFALING **************/
+
+
+.anbefaling {
+    background-color: rgba(145, 128, 107, 0.2);
+    width: 100%;
+    padding: 15%;
+}
+
+.anbefaling > h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#citater {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 5%;
+
+}
+
+#citat1 p {
+    padding-right: 6%;
+}
+
+#citat2 p {
+    padding-left: 6%;
+}
+
+
+
+/*######################### BOOKING #########################*/
+
+
+#booking > iframe {
+    width: 100%;
+    height: 1000px;
+    margin: 0;
+}
+
+
+#booking,
+.book-pris-billeder {
+    padding: 8%;
+    width: 100%;
+}
+
+
+#booking h1,
+.book-pris-billeder h1 {
+    padding: 0% 0% 5% 0%;
+    text-align: center;
+}
+
+.book-pris-single {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 15%;
+    align-items: center;
+}
+
+
+.book-pris-single img {
+    width: 80%;
+    padding: 5%;
+}
+
+
+#afbud {
+    padding: 8%;
+    background-color: rgba(145, 128, 107, 0.2);
+}
+
+#afbud h1 {
+    padding-bottom: 3%;
+}
+
+#persondatalov {
+    padding: 8%;
+}
+
+#persondatalov h1,
+#persondatalov p {
+    padding-bottom: 3%;
+}
+
+
+
+
+
+/*##################### BEHANDLINGER ########################*/
+
+#behandlinger-billede {
+
+    background: url("../images/volva-kropsterapi-behandlingsrum.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    height: 60vh;
+    width: 100vw;
+}
+
+hr {
+    height: 1px;
+    background: #ffffff;
+    border: 0;
+    margin: 0 auto 40px auto;
+}
+
+#behandlinger-billede h1 {
+    font-size: 50px;
+    height: 40vh;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.padding-mellem {
+    padding: 8%;
+}
+
+.kropsterapi-info {
+    margin: 8% 8% 0% 8%;
+}
+
+#kropsterapi-tekst {
+    margin: 0% 8% 8% 8%;
+}
+
+.kropsterapi-info h1 {
+    font-size: 40px;
+    text-align: left;
+    padding-bottom: 2%;
+}
+
+.kropsterapi-info > div > p {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+#behandlingsform {
+    margin: 7%;
+    list-style-position: inside;
+}
+
+.behandlingsformer {
+
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+}
+
+.behandlingsformer img {
+    padding: 0% 0% 4% 0%;
+}
+
+.behandlingsformer > h2 {
+    font-size: 40px;
+}
+
+#behandlingsform > div > a {
+    color: black;
+}
+
+#box-mobile {
+    margin: 8%;
+    list-style-position: inside;
+}
+
+#box-mobile a {
+    color: #4f4437;
+    text-decoration-color: #4f4437;
+}
+
+.mobile-tablet-img,
+.laptop-img {
+    width: 100%;
+}
+
+.placer-nederst {
+    padding-top: 0%;
+}
+
+.botton-bestil-tid {
+    width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top: 30%;
+    right: 2%;
+}
+
+/* W3School*/
+
+
+
+
+
+/*########################### OM VOLVA ###########################*/
+
+#om-janne-jeppesen {
+    padding-top: 8%;
+    padding-left: 8%;
+    background-color: rgba(145, 128, 107, 0.2);
+    display: flex;
+    flex-direction: row;
+}
+
+#om-janne-jeppesen h1 {
+    padding-bottom: 3%;
+}
+
+#om-janne-jeppesen h3 {
+    padding-bottom: 2%;
+}
+
+#om-janne-jeppesen > img {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    margin-top: 5%;
+}
+
+#knapper {
+    padding: 10% 10% 10% 10%;
+}
+
+#knapper > .button1 {
+    width: 40%;
+}
+
+#knapper > .button {
+    width: 50%;
+}
+
+#uddannelse {
+    padding: 8%;
+    background-color: rgba(145, 128, 107, 0.2);
+}
+
+#uddannelse p {
+    line-height: 180%;
+}
+
+#navnet-volva {
+    padding: 8%;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+
+.button,
+.button1 {
+    width: 140px;
+    height: 50px;
+}
+
+
+
+
+/**######################## KONTAKT ##########################*/
+
+#kontakt-billede {
+
+    background: url("../images/volva-kropsterapi-velkommen.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+hr {
+    height: 1px;
+    background: #ffffff;
+    border: 0;
+    margin: 0 auto 40px auto;
+}
+
+#kontakt-billede h1 {
+    font-size: 50px;
+    height: 70vh;
+    text-align: center;
+    margin-top: 20%;
+}
+
+
+
+
+.kontakt-mig {
+    padding: 8%;
+    text-align: center;
+}
+
+#om-klinikken {
+    padding: 8%;
+    background-color: rgba(145, 128, 107, 0.2);
+}
+
+#find-vej h2 {
+    padding-left: 8%;
+    padding-bottom: 5%;
+    padding-top: 10%;
+}
+
+/**################## Samtykkeerklæring ######################*/
+
+#samtykke {
+    padding: 8%;
+}
+
+#samtykke h2 {
+    padding-top: 5%;
+}
+
+#samtykke p {
+    padding-top: 0.5%;
+}
+
+
+
+
+
+
+
+/************************** FOOTER ****************************/
+
+footer {
+    background-color: #4f4437;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+footer p,
+footer h3 {
+    color: #ddd2ca;
+}
+
+footer h3 {
+    margin-bottom: 2%;
+}
+
+.nolist {
+    margin-bottom: 10%;
+
+}
+
+
+/*-------------------------- NAVIGATION -------------------------------*/
+@media only screen and (max-width: 900px) {
+
+    header {
+        display: block;
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #main-nav li {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #main-nav a {
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    #behandlingsform {
+        display: none;
+    }
+
+}
+
+/*-------------------------- MOBILE -------------------------------*/
+@media only screen and (max-width: 480px) {
+
+
+    /*###################### FORSIDE ##########################*/
+
+    /********* FORSIDE BILLEDE ************/
+    #home h1 {
+
+        margin-top: 40%;
+    }
+
+
+    /********** OM JANNE JEPPESEN ************/
+
+    #om-janne > img {
+        display: none;
+    }
+
+    #om-janne > div > p {
+        font-size: 18px;
+    }
+
+
+
+    /********** KLIENTERNE SIGER ************/
+
+    #citat2 {
+        display: none;
+    }
+
+    #citat1 {
+        width: 75%;
+    }
+
+    /************* PRISER *************/
+
+    .priser-billeder {
+        flex-wrap: wrap;
+    }
+
+    .priser-billeder img {
+        width: 40%;
+    }
+
+    /*######################## BOOKING ############################*/
+
+    .book-pris-billeder {
+        flex-wrap: wrap;
+    }
+
+    .book-pris-billeder img {
+        width: 40%;
+    }
+
+    #behandlinger-billede h1 {
+        display: none;
+    }
+
+
+
+    /*#################### BEHANDLINGSFORMER ######################*/
+
+
+
+    /*######################## OM VOLVA  ##########################*/
+
+
+    #om-janne-jeppesen {
+        flex-direction: column;
+        padding-right: 8%;
+    }
+
+    #om-janne-jeppesen img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /************************** FOOTER ****************************/
+}
+
+
+
+/*----------------------------- TABLET ----------------------------*/
+@media only screen and (min-width: 481px) {
+
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 18px;
+        padding-bottom: 1%;
+        font-weight: 400;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300;
+    }
+
+
+
+
+    /*###################### FORSIDE ##########################*/
+
+
+    #home {
+        height: 65vh;
+    }
+
+
+    #home .button1,
+    #home .button {
+        top: 50%;
+    }
+
+    /********** OM JANNE **********/
+
+    #om-janne > div > h2 {
+        padding: 15% 0 0 10%;
+
+    }
+
+
+    #om-janne div p {
+        font-size: 18px;
+        padding: 10%;
+        padding-right: 0%;
+
+    }
+
+    /********** PRIS **********/
+
+    .priser-billeder {
+
+        padding: 0% 4% 8% 4%;
+    }
+
+    .book-pris-single {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    .book-pris-single img {
+        width: 25%;
+        padding: 2%;
+    }
+
+
+
+
+    /******* HVAD ER KROPSTERAPI *******/
+    #kropsterapi h1,
+    #kropsterapi p {
+        text-align: left;
+    }
+
+
+
+
+
+    /*################# BEHANDLINGSFORMER #####################*/
+
+
+
+    /********* KROSTERAPI *********/
+
+    .anbefaling {
+        padding: 3% 15% 3% 15%;
+    }
+
+    #kropsterapi-behandling {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #kropsterapi-tekst {
+        margin: 0% 8% 8% 8%;
+    }
+
+
+    .placer-ved-siden-af {
+        flex-direction: column;
+        padding-right: 9%;
+    }
+
+    .sticky {
+        top: 50%;
+    }
+
+    .anbe-padding {
+        padding: 8% 15%;
+    }
+
+
+
+    /*######################## OM VOLVA ########################*/
+
+
+
+    #om-janne-jeppesen {
+        flex-direction: column;
+        width: 100%;
+        padding: 8% 8% 0% 8%;
+    }
+
+    #om-janne-jeppesen img {
+        width: 70%;
+    }
+
+    #knapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+
+    /*============= KNAPPER STYLING =============*/
+
+    .button,
+    .button1 {
+        width: 180px;
+        height: 60px;
+    }
+
+
+
+    /************************** FOOTER ****************************/
+
+
+    footer {
+        flex-direction: row;
+        padding: 2%;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .footer-list {
+        text-align: left;
+        padding: 3% 6% 0% 6%;
+        width: 30%;
+        text-align: center;
+    }
+
+    .footer-list h3 {
+        padding-bottom: 4%;
+    }
+
+}
+
+/*-------------------------- LAPTOP --------------------------*/
+
+@media only screen and (min-width: 850px) {
+
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+        padding-bottom: 1%;
+    }
+
+    p,
+    li {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 300;
+    }
+
+    .logo1 {
+        width: 110px;
+        margin: 4% 0% 8% 0%;
+    }
+
+    #main-nav a {
+        font-weight: 400;
+        color: #4f4437;
+    }
+
+
+    /*######################### FORSIDE #########################*/
+
+
+    /************** TOP BILLEDE **************/
+
+    #home h1 {
+        margin-top: 11%;
+    }
+
+    #home {
+        height: 70vh;
+    }
+
+    #home .button1,
+    #home .button {
+        top: 55%;
+    }
+
+
+    /************** OM JANNE **************/
+
+    #om-janne > div > p {
+        font-size: 22px;
+        padding: 5% 5% 10% 25%;
+    }
+
+    #om-janne > img {
+        margin-top: 5%;
+    }
+
+    #om-janne > div > h1 {
+        padding-top: 8%;
+        padding-left: 25%;
+    }
+
+
+    /************** PRISER **************/
+
+    #priser > h1 {
+        padding-bottom: 4%;
+    }
+
+    .priser-billeder {
+        padding: 0% 8% 8% 8%;
+    }
+
+    /*###################### BOOKING #########################*/
+
+    iframe {
+        width: 60%;
+    }
+    
+    .book-pris-billeder h2 {
+        text-align: center;
+
+    }
+
+    #booking,
+    .book-pris-billeder {
+        padding: 2% 4% 4% 4%;
+
+    }
+
+    .book-pris {
+        display: flex;
+        flex-direction: row;
+        margin: 0% 4% 4% 4%;
+    }
+
+    .book-pris-billeder {
+        width: 50%;
+    }
+
+    .book-pris-single {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .book-pris-single img {
+        width: 65%;
+        height: 65%;
+        margin: 5% 9% 0% 9%;
+    }
+
+
+    /*##################### BEHANDLINGER #####################*/
+
+
+    .anbefaling {
+        padding: 3% 15% 3% 15%;
+    }
+
+    #kropsterapi-behandling {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .kropsterapi-info {
+        width: 50%;
+
+    }
+
+    #kropsterapi-tekst {
+        margin: 3% 8%;
+    }
+
+    #behandlingsform {
+        background-color: rgba(145, 128, 107, 0.2);
+        padding: 2%;
+        margin: 9% 10% 0% 5%;
+        width: 35%;
+        height: 35%
+    }
+
+    .behandlingsformer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .behandlingsformer img {
+        width: 50%;
+        height: 50%;
+    }
+
+    #box-mobile {
+        display: none;
+    }
+
+    .sticky {
+        top: 70%;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .padding-reverse {
+        padding: 0% 4% 0% 0%;
+    }
+
+    .padding1 {
+        padding-left: 3%;
+    }
+
+    /*################# OM VOLVA ###################*/
+
+    #om-janne-jeppesen {
+        padding-bottom: 0;
+        padding-right: 0;
+        flex-direction: row;
+    }
+
+    #om-janne-jeppesen > img {
+        width: 50%;
+        height: 50%;
+        position: relative;
+        margin-top: 28%;
+    }
+
+    #om-janne-jeppesen > div > p {
+        padding-bottom: 5%;
+    }
+
+    /*################# KONTAKT ###################*/
+    #kontakt-billede h1 {
+        margin-top: 5%;
+    }
+
+    #find-vej iframe {
+        width: 100%;
+    }
+
+    /*============= KNAPPER STYLING =============*/
+
+    .button,
+    .button1 {
+        width: 300px;
+        height: 60px;
+        font-size: 30px;
+        line-height: 15px;
+    }
+
+
+
+}
